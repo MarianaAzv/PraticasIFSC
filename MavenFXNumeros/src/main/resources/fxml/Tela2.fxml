@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTela2">
+   <children>
+      <Label fx:id="lblpesquisaobreprogramacao" layoutX="240.0" layoutY="26.0" prefHeight="17.0" prefWidth="137.0" text="Pesquisa de programacao" />
+      <Pane layoutX="19.0" layoutY="45.0" prefHeight="348.0" prefWidth="567.0">
+         <children>
+            <Label fx:id="lblnome" layoutX="10.0" layoutY="31.0" text="nome" />
+            <TextField fx:id="textNome" layoutX="192.0" layoutY="27.0" />
+            <Label fx:id="LblSistemaOperacional" layoutY="72.0" text="Sistema Opeacional" />
+            <ToggleButtonGroup layoutX="84.0" layoutY="156.0" selectionType="SINGLE" />
+              <ToggleButton fx:id="TBLinux" layoutX="297.0" layoutY="71.0" selected="true" text="Linux" textFill="#eb3f3f" />
+              <ToggleButton fx:id="TBMac" layoutX="413.0" layoutY="68.0" text="Mac" textFill="#cd4747" />
+              <ToggleButton fx:id="TBWndons" layoutX="187.0" layoutY="71.0" text="Windons" textAlignment="CENTER" textFill="#d32424" />
+            <Label layoutY="139.0" text="Linguagem de programaçao de preferencia" />
+            <RadioButton fx:id="RBC" layoutX="259.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="38.0" text="C" />
+            <RadioButton layoutX="341.0" layoutY="139.0" mnemonicParsing="false" onAction="#RBJava" text="Java" />
+            <RadioButton fx:id="RBPyton" layoutX="451.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" text="Phyton" />
+            <CheckBox fx:id="cBpogramadisas" layoutX="16.0" layoutY="224.0" mnemonicParsing="false" text="Voce programa todos os dias" />
+            <CheckBox fx:id="CBGostadeprogramar" layoutX="16.0" layoutY="273.0" mnemonicParsing="false" text="Voce gosta de programar" />
+            <Button fx:id="BTNSubmeterPesquisa" layoutX="240.0" layoutY="301.0" mnemonicParsing="false" text="Submeter pesquisa" textFill="#33bf21" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
